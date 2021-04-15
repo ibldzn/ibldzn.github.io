@@ -257,8 +257,9 @@ Let's rename `sub_1404F54A0` to `should_dying_walk`.
 
 ---
 
-Now that we got what we wanted all that's left is to "finish up",
-we could just leave the bytepatch we just did, but that's such a "hacky" way to do it,
+Now that we got what we wanted all that's left is to make the game execute what we want,
+we could just dump the process with the bytepatch we just did,
+but that's such a "hacky" way to do it especially for game hacking,
 let's make a DLL that will hook `should_dying_walk` and returning false everytime.
 
 I'm using [minhook](https://github.com/TsudaKageyu/minhook) library for this
